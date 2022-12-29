@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+li {
+    list-style: none;
+}
+.contactBg{
+    background-color: black;
+    color: #75FB9E;
+}
+#agreen:checked+label::before {
+    color: red;
+}
+
+#contact [type=text] {
+    border: 0;
+    width: 100%;
+    background-color: black;
+    color:white;
+     /* #75FB9E; */
+}
+
+.line {
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.hoverline {
+    border-color: #75FB9E;
+}
+
+.formindent {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#contact>ul>li {
+    padding-top: 2rem;
+    height: 113px;
+}
+
+#contact .line p {
+    transform: translateY(-30%);
+}
+
+.js-selectDiv {
+    transition: 0.5s;
+    height: 40px;
+    z-index: 9;
+}
+
+.js-selectDiv.on {
+    height: 150px;
+}
+
+.js-selectDiv.on p i {
+    transform: rotate(180deg);
+}
+
+#popagree {
+    max-width: 600px;
+    width: calc(100%-60px);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+body.show::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+body.show #popagree {
+    display: block;
+    z-index: 12;
+}
+.bg-dark{
+    background-color: black !important;
+}
+#formId{
+    top: -6vh;
+    right: 0;
+}
+#formId img{
+    width: 27vw;
+}
+.input_text_line:focus{
+    
+    border-color: #75FB9E;
+    color: white;
+    outline: none;
+}
+.input_text_line:focus::placeholder{
+    color: transparent;
+}
+.in_fc{
+    border-color: #75FB9E;
+}
+/* *{
+    padding: 0; margin: 0;
+}
+li{
+    list-style: none;
+}
+#agreen:checked + label::before{color: red;}
+#contact [type=text]{border: 0; width: 100%;}
+.line{border: 2px solid red; border-radius: 12px; }
+.blueline{border-color: blue;}
+.formindent{padding-right: 1rem; padding-left: 1rem;}
+#contact > ul > li{padding-top: 2rem; height: 113px;}
+#contact .line p{
+    transform: translateY(-30%);
+}
+.js-selectDiv{transition: 0.5s; height: 40px; z-index: 9;}
+.js-selectDiv.on{height: 150px;}
+.js-selectDiv.on p i{
+    transform: rotate(180deg);
+}
+#popagree{
+    max-width: 600px; width: calc(100%-60px); 
+    margin: auto; left: 0; right: 0; top: 50%; transform: translateY(-50%);
+    display: none;
+}
+body.show::before{
+    content: "";
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+body.show #popagree{ display: block; z-index: 12;} */
