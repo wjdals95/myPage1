@@ -31,8 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   top: 0;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgb(119, 104, 104);
   width: 100%;
   border: 1px solid black;
   transition: top 0.5;

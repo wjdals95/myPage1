@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Contact.css'
 import $ from 'jquery';
 
 function Contact(props) {
+
+    const [isOpen, setMenu] = useState(false); // 메뉴의 초기값을 false로 설정
+
+    const toggleMenu = () => {
+        setMenu(isOpen => !isOpen); // on,off 개념 boolean
+    }
 
         $('form').on('click submit','[type="submit"]',function(){
             // prop, hasClass, is~~~ 이런형태의 메서드는 return값이 true, false - if문
@@ -19,9 +25,9 @@ function Contact(props) {
         const areaSelectE1 = document.querySelectorAll('form .js-selectDiv')[0];
         const areainput = document.getElementsByName('area')[0];
 
-        areaSelectE1.addEventListener('click', function(e){
-        this.classList.toggleClass('on');
-        });
+        // areaSelectE1.addEventListener('click', function(e){
+        // this.classList.toggle('on');
+        // });
 
         let areali = document.querySelectorAll('form .js-selectDiv li');
 
@@ -55,8 +61,8 @@ function Contact(props) {
                             </p>
                         </div>
                     </li>
-                    <li class="col-md-2 ">
-                        <div class="line js-selectDiv bg-dark  overflow-hidden position-relative">
+                    <li class="col-md-2 " onClick={()=>toggleMenu()}>
+                        <div className='line js-selectDiv bg-dark  overflow-hidden position-relative {isOpen ? "on" : }' >
                             <p class="pt-2 text-center">지역선택<i class="xi-angle-down textColor"></i>
                             </p>
                             <ul class="position-absolute">
